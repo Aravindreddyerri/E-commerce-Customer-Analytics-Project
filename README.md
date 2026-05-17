@@ -1,10 +1,10 @@
 # E-commerce Customer Analytics with Microsoft Fabric
 
 ## Overview
-This project builds an end-to-end analytics pipeline in Microsoft Fabric using e-commerce CSV data stored in ADLS Gen2.[file:6][file:8] The solution ingests raw files into a Lakehouse, transforms them with PySpark in a Fabric notebook, creates a gold customer analytics table, and visualizes the results in Power BI.
+This project builds an end-to-end analytics pipeline in Microsoft Fabric using e-commerce CSV data stored in ADLS Gen2. The solution ingests raw files into a Lakehouse, transforms them with PySpark in a Fabric notebook, creates a gold customer analytics table, and visualizes the results in Power BI.
 
 ## Project Goal
-The goal of the project is to turn raw customer and transaction data into a clean analytics model for reporting and business insights.[file:6] The final output supports customer behavior analysis using integrated order, payment, support, and web activity data.
+The goal of the project is to turn raw customer and transaction data into a clean analytics model for reporting and business insights. The final output supports customer behavior analysis using integrated order, payment, support, and web activity data.
 
 ## Dataset
 The project uses the following CSV files:
@@ -27,7 +27,7 @@ The implementation follows a bronze-silver-gold architecture in Microsoft Fabric
 The Fabric pipeline uses a metadata activity, a ForEach loop, a copy activity, and a notebook activity. The pipeline first identifies source files, copies them into the Lakehouse, and then triggers the notebook for transformation logic.
 
 ## ADF-Style Pipeline
-The ingestion workflow was implemented with a Microsoft Fabric Data Pipeline that follows an Azure Data Factory style orchestration pattern.[file:8] It uses a `Get Metadata` activity to read available files, a `ForEach` activity to iterate through them, a `Copy Data` activity to load them into the Lakehouse bronze layer, and a notebook activity to run PySpark transformations.
+The ingestion workflow was implemented with a Microsoft Fabric Data Pipeline that follows an Azure Data Factory style orchestration pattern. It uses a `Get Metadata` activity to read available files, a `ForEach` activity to iterate through them, a `Copy Data` activity to load them into the Lakehouse bronze layer, and a notebook activity to run PySpark transformations.
 
 ### Screenshot Notes
 Add screenshots for the pipeline canvas, the ForEach copy activity, and the successful run output in this section of the repository documentation.
@@ -71,4 +71,4 @@ The dashboard indicates that Surat leads in total order amount, male customers c
 - Created a business-facing Power BI dashboard from curated data.
 
 ## Project Outcome
-This project demonstrates practical data engineering and analytics skills using Microsoft Fabric.[file:6][file:8] It shows how raw cloud-based datasets can be transformed into a curated reporting model for customer analysis.
+This project demonstrates practical data engineering and analytics skills using Microsoft Fabric. It shows how raw cloud-based datasets can be transformed into a curated reporting model for customer analysis.
