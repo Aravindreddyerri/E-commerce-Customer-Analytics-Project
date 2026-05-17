@@ -26,6 +26,9 @@ The implementation follows a bronze-silver-gold architecture in Microsoft Fabric
 ## Pipeline Flow
 The Fabric pipeline uses a metadata activity, a ForEach loop, a copy activity, and a notebook activity. The pipeline first identifies source files, copies them into the Lakehouse, and then triggers the notebook for transformation logic.
 
+<img width="2880" height="1800" alt="image" src="https://github.com/user-attachments/assets/92545080-e608-4406-8a56-a51a48dea822" />
+
+
 ## ADF-Style Pipeline
 The ingestion workflow was implemented with a Microsoft Fabric Data Pipeline that follows an Azure Data Factory style orchestration pattern. It uses a `Get Metadata` activity to read available files, a `ForEach` activity to iterate through them, a `Copy Data` activity to load them into the Lakehouse bronze layer, and a notebook activity to run PySpark transformations.
 
@@ -55,6 +58,8 @@ The Power BI report contains visuals for:
 - Order amount by device type.
 
 The dashboard indicates that Surat leads in total order amount, male customers contribute the largest share of orders, and Android is the most represented device type in the report snapshot.
+<img width="2880" height="1800" alt="image" src="https://github.com/user-attachments/assets/c070c13f-f153-453c-9a12-f527e751199b" />
+
 
 ## Tech Stack
 - Azure Data Lake Storage Gen2
